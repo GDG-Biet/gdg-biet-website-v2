@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body className="dark:bg-gray-900 dark:text-white">
         <div className="h-28 w-full flex justify-center pt-3 font-Lato sticky top-5 z-40"><Navbar></Navbar></div>
         {children}
       </body>
