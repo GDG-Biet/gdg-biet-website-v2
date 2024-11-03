@@ -2,6 +2,7 @@
 import Image from "next/image"
 import logo from "../assets/logo_dark.svg"
 import light from "../assets/lightMode.svg"
+import dark from "@/assets/dark.svg"
 import Link from "next/link"
 export function Navbar(){
     return<div className="flex justify-center w-full">
@@ -21,19 +22,19 @@ function Logo(){
 }
 
 function Menu(){
+    const toggleTheam =()=>{
+         document.documentElement.classList.toggle("dark");
+         
+        }
 
-    const toggleTheam =()=>{ document.documentElement.classList.toggle("dark");}
-
-    return<div className="lg:w-1/3 w-2/3 fixed lg:static object-center bottom-0 bg-red-10 dark:bg-black dark:bg-opacity-5 bg-opacity-50 backdrop-blur-lg bg-gray-200 lg:bg-opacity-0 lg:backdrop-blur-none rounded-3xl  p-5 ">
+    return<div className="lg:w-1/3 w-2/3 fixed lg:static object-center bottom-0 bg-red-10 dark:bg-black dark:bg-opacity-5 bg-opacity-50 backdrop-blur-lg bg-gray-200 lg:bg-transparent lg:bg-opacity-0 lg:backdrop-blur-none rounded-3xl  p-5 ">
         
         <ul className="flex lg:flex-row flex-row justify-around items-left gap-5 ">
             <li className="lg:text-lg text-sm font-semibold text-gray-500"><Link href="/events">Events</Link></li>
             <li className="lg:text-lg text-sm font-semibold text-gray-500"><Link href="/projects">Projects</Link></li>
             <li className="lg:text-lg text-sm font-semibold text-gray-500"><Link href="/team">Team</Link></li>
             <li className="lg:text-lg text-sm font-semibold text-gray-500"><Link href="/contact">Contact us</Link></li>
-            <button><Image onClick={toggleTheam} src={light} alt="Picture of the author"className="lg:h-9 h-5"/></button>
-
-
+            <button><Image onClick={toggleTheam} src={light} alt="Picture of the author"className=" dark:hidden lg:h-9 h-5"/><Image onClick={toggleTheam} src={dark} alt="Picture of the author"className="dark:block hidden lg:h-9 h-5"/></button>
         </ul>
     </div>
 }
