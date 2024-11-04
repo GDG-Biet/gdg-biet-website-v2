@@ -100,7 +100,7 @@ export default function Home() {
         </div>
       </div>
       {/* Story*/}
-      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh]">
+      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">Stories</h3>
         <div className=" bg-blue-600 bg-opacity-50 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
