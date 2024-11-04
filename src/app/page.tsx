@@ -3,7 +3,7 @@ import line from "@/assets/line1.svg"
 import line2 from "@/assets/line2.svg"
 import HeroLogo from "@/components/HeroLogo"
 import Storycard from "@/components/Storycard";
-// import FAQs from "@/components/Faq";
+import FAQs from "@/components/Faq";
 import Square from "@/assets/BlueSquare.svg"
 import Circle from "@/assets/GreenCircle.svg"
 import Triangle from "@/assets/Triangle.svg"
@@ -56,7 +56,8 @@ export default function Home() {
           <h3 className="tracking-widest text-5xl font-semibold text-center justify-center relative z-10 text-black dark:text-gray-500">Events</h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
          </div>
-         <div className="w-4/5 h-[425px] bg-slate-300 dark:bg-slate-700 dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">
+         <div className="w-4/5 h-[425px] bg-slate-500 dark:bg-slate-700 dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">
+         
          <div className="justify-center flex">
          <Carousel className="my-10 mx-10 md:w-auto w-4/5">
             <CarouselContent>
@@ -71,6 +72,7 @@ export default function Home() {
             <CarouselNext />
           </Carousel>
           </div>
+
          <Image src={Triangle} alt="Triangle" className="absolute -right-20 -bottom-20 -z-0"/>
          <Image src={SquareGray} alt="Triangle" className="absolute -left-20 bottom-[-10rem] -z-10"/>
          </div>
@@ -90,7 +92,7 @@ export default function Home() {
         <div><Image src={hexagon} alt="arc" className=" sm:left-10 absolute h-24 lg:h-48 "/></div>
        </div>
 
-      {/* sponsers */}
+      {/* sponsors */}
       <div className="flex justify-center -z-10 flex-col sm:mt-36 mt-24">
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">Sponsors</h3>
         <div className="w-full bg-slate-200 h-16 mt-5">
@@ -98,7 +100,7 @@ export default function Home() {
         </div>
       </div>
       {/* Story*/}
-      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh]">
+      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">Stories</h3>
         <div className=" bg-blue-600 bg-opacity-50 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
@@ -109,7 +111,7 @@ export default function Home() {
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">FAQs</h3>
         <div className="w-full mt-5">
           <div className="md:w-5/6 bg-red-200 m-auto">
-          {/* <FAQs></FAQs> */}
+          <FAQs />
           </div>
         </div>
       </div>
