@@ -46,8 +46,8 @@ export default function Home() {
         <h3 className="font-Lato text-black dark:text-white font-normal text-center mt-5 text-xl">On Campus<br/><strong className="text-[#FBBC04] mt-10 text-2xl leading-10">BIET</strong>, Lucknow</h3>
        </div>
       <div className="flex justify-center gap-7 mt-10">
-        <button className="p-2 font-semibold px-10 text-lg border-2 border-black dark:border-gray-500 bg-[#4285F4] rounded-lg text-white ">Join Chapter</button>
-        <button className="p-2 font-semibold px-10 text-lg border-2 border-black dark:border-gray-500 text-[#4285F4] rounded-lg">Open Position</button>
+        <button className="p-2 font-semibold px-8 md:text-lg text-base border-2 border-black dark:border-gray-500 bg-[#4285F4] rounded-lg text-white ">Join Chapter</button>
+        <button className="p-2 font-semibold px-8 md:text-lg  border-2 border-black dark:border-gray-500 text-[#4285F4] rounded-lg">Open Position</button>
       </div>
       </div>
       {/* Event Section */}
