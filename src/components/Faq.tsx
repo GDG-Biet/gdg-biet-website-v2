@@ -20,12 +20,12 @@ export default function Faqs(){
     questions = [
         {key:1,question:"What is gdsc?",answer:"GDSC is a community"},
         {key:2,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:3,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:4,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:5,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:6,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:7,question:"What is gdsc?",answer:"GDSC is a community"},
-        // {key:8,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:3,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:4,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:5,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:6,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:7,question:"What is gdsc?",answer:"GDSC is a community"},
+        {key:8,question:"What is gdsc?",answer:"GDSC is a community"},
     ];
     return<div>
         <div className="w-11/12 grid grid-rows-8 bg-slate-300 m-auto p-2">
