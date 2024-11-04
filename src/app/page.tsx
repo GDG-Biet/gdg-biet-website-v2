@@ -3,7 +3,7 @@ import line from "@/assets/line1.svg"
 import line2 from "@/assets/line2.svg"
 import HeroLogo from "@/components/HeroLogo"
 import Storycard from "@/components/Storycard";
-import FAQs from "@/components/Faq";
+// import FAQs from "@/components/Faq";
 import Square from "@/assets/BlueSquare.svg"
 import Circle from "@/assets/GreenCircle.svg"
 import Triangle from "@/assets/Triangle.svg"
@@ -23,13 +23,13 @@ import {
 
 
 export default function Home() {
-  const images = [
-    { src: "/placeholder.svg?height=200&width=300", alt: "Image 1" },
-    { src: "/placeholder.svg?height=250&width=350", alt: "Image 2" },
-    { src: "/placeholder.svg?height=180&width=320", alt: "Image 3" },
-    { src: "/placeholder.svg?height=220&width=280", alt: "Image 4" },
-    { src: "/placeholder.svg?height=240&width=360", alt: "Image 5" },
-  ]
+  // const images = [
+  //   { src: "/placeholder.svg?height=200&width=300", alt: "Image 1" },
+  //   { src: "/placeholder.svg?height=250&width=350", alt: "Image 2" },
+  //   { src: "/placeholder.svg?height=180&width=320", alt: "Image 3" },
+  //   { src: "/placeholder.svg?height=220&width=280", alt: "Image 4" },
+  //   { src: "/placeholder.svg?height=240&width=360", alt: "Image 5" },
+  // ]
 
   return (
     <div className="w-min-[1280px] mx-auto">  
@@ -95,11 +95,6 @@ export default function Home() {
         <p className="text-center m-3 text-[#FBBC04] text-2xl font-base">while having fun.</p>
         <div><Image src={arc} alt="arc" className="lg:right-28 right-0  absolute h-16 lg:h-48 "/></div>
         <div><Image src={hexagon} alt="arc" className=" sm:left-10 absolute h-24 lg:h-48 "/></div>
-      <div className="m-auto w-4/6 mt-60 flex justify-center flex-col text-[#656C73]">
-        <p className="py-2 pl-10 text-xl font-semibold text-black dark:text-gray-500">We</p>
-        <p className="lg:text-7xl md:text-5xl sm:text-2xl text-lg text-center text-black dark:text-gray-500"><strong className="text-[#34A853] bg-green-200 dark:bg-opacity-0 md:rounded-2xl sm:rounded-lg px-3 mx-2">Learn</strong>,<strong className="text-[#EA4335] dark:bg-opacity-0 bg-red-200 rounded-2xl px-3">Innovate</strong> & <strong className="text-[#4285F4] dark:bg-opacity-0 bg-blue-200 rounded-2xl px-3 mx-1">Create</strong></p>
-        <p className="text-center m-5 text-[#FBBC04] text-2xl font-base">while having fun.</p>
-        {/* <div><Image src={arc} alt="arc" className="right-10 absolute"/></div> */}
        </div>
 
       {/* sponsers */}
