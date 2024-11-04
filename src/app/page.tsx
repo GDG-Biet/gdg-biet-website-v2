@@ -56,26 +56,21 @@ export default function Home() {
           <h3 className="tracking-widest text-5xl font-semibold text-center justify-center relative z-10 text-black dark:text-gray-500">Events</h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
          </div>
-         <div className="w-4/5 h-[425px] bg-slate-600 bg-opacity-25 mt-16 m-auto rounded-3xl relative">
+         <div className="w-4/5 h-[425px] bg-slate-300 dark:bg-slate-700 dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">
          <div className="justify-center flex">
-         <Carousel className="">
+         <Carousel className="my-10 mx-10 md:w-auto w-4/5">
             <CarouselContent>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><ActionAreaCard /></CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
           </div>
-         
-
-         {/* <Carousel items={cards} /> */}
-
          <Image src={Triangle} alt="Triangle" className="absolute -right-20 -bottom-20 -z-0"/>
          <Image src={SquareGray} alt="Triangle" className="absolute -left-20 bottom-[-10rem] -z-10"/>
          </div>
@@ -85,9 +80,7 @@ export default function Home() {
         <div className="w-full h-auto flex justify-center items-center">
           <p className="lg:w-4/5 text-lg lg:text-2xl text-justify text-black dark:text-gray-500">At BIET on campus GDG we are creating a dynamic, ever-growing community of tech enthusiasts who are passionate about <strong className="text-[#34A853]">technology</strong>, <strong className="text-[#4285F4]">development</strong>, and the <strong className="text-[#EA4335]">joy</strong> of continuous learning. </p>
         </div>
-        <div className="w-full h-auto">
-        <Image src={Group} alt="GDG-group-illustration"/>
-        </div>
+        <div className="w-full h-auto"><Image src={Group} alt="GDG-group-illustration"/></div>
       </div>
       <div className="m-auto lg:mt-32 mt-10 sm:w-4/6 flex justify-center flex-col text-[#656C73]">
         <p className=" pl-10 text-xl font-semibold text-black dark:text-gray-500">We</p>
