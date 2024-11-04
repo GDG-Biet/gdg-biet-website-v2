@@ -8,6 +8,7 @@ import Circle from "@/assets/GreenCircle.svg"
 import Triangle from "@/assets/Triangle.svg"
 import SquareGray from "@/assets/Square.svg"
 import Group from "@/assets/Group.svg"
+import arc from "@/assets/arc.svg"
 export default function Home() {
 
   return (
@@ -42,13 +43,19 @@ export default function Home() {
        </div>
 
       <div className="grid grid-cols-2 gap-5 w-11/12 m-auto">
-        <div className="w-4/5 h-auto flex justify-center items-center">
-          <p className=" sm:text-sm md:text-base lg:text-2xl text-justify text-black dark:text-gray-500">At BIET, Lucknow’s on campus GDG we are creating a dynamic, ever-growing community of tech enthusiasts who are passionate about <strong className="text-[#34A853]">technology</strong>, <strong className="text-[#4285F4]">development</strong>, and the <strong className="text-[#EA4335]">joy</strong> of continuous learning. </p>
+        <div className="lg:w-4/5 w-full h-auto flex justify-center items-center">
+          <p className=" sm:text-sm md:text-base lg:text-2xl text-justify text-black dark:text-gray-500">At BIET on campus GDG we are creating a dynamic, ever-growing community of tech enthusiasts who are passionate about <strong className="text-[#34A853]">technology</strong>, <strong className="text-[#4285F4]">development</strong>, and the <strong className="text-[#EA4335]">joy</strong> of continuous learning. </p>
         </div>
         <div className="w-full h-auto">
         <Image src={Group} alt="GDG-group-illustration"/>
         </div>
       </div>
+      <div className="m-auto w-4/6 mt-60 flex justify-center flex-col text-[#656C73]">
+        <p className=" pl-10 text-xl font-semibold text-black dark:text-gray-500">We</p>
+        <p className="lg:text-7xl md:text-5xl sm:text-2xl text-lg text-center text-black dark:text-gray-500"><strong className="text-[#34A853] bg-green-200 dark:bg-opacity-0 md:rounded-2xl sm:rounded-lg px-3 mx-2">Learn</strong>,<strong className="text-[#EA4335] dark:bg-opacity-0 bg-red-200 rounded-2xl px-3">Innovate</strong> & <strong className="text-[#4285F4] dark:bg-opacity-0 bg-blue-200 rounded-2xl px-3 mx-1">Create</strong></p>
+        <p className="text-center m-5 text-[#FBBC04] text-2xl font-base">while having fun.</p>
+        {/* <div><Image src={arc} alt="arc" className="right-10 absolute"/></div> */}
+       </div>
     </div>
   );
 }
