@@ -56,13 +56,13 @@ export default function Home() {
          <div className="w-4/5 h-[425px] bg-slate-600 bg-opacity-25 mt-16 m-auto rounded-3xl relative">
          <div className="justify-center flex">
          <Carousel className="">
-            <CarouselContent>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3 mx-6 my-10" ><ActionAreaCard /></CarouselItem>
+            <CarouselContent className="mx-10 my-10">
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3" ><ActionAreaCard /></CarouselItem>
 
             </CarouselContent>
             <CarouselPrevious />
