@@ -190,7 +190,7 @@ export default function Home() {
           FAQs
         </h3>
         <div className="w-full mt-5 flex justify-center">
-          <div className="  m-20 p-4 bg-red-200 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
+          <div className="m-20 p-4 bg-red-200 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
             <FAQs />
           </div>
         </div>
