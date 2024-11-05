@@ -6,7 +6,7 @@ import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
 import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
-
+import Form from "@/components/Form";
 export default function Events(){
     return(
         <>
@@ -15,7 +15,7 @@ export default function Events(){
       <div><Image src={Square} alt="Element-Square" className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0"/></div>
       <div><Image src={Circle} alt="Element-Square" className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 top-[50vh] -z-0"/></div>
        <div className="absolute -top-4 right-0 -z-10 h-screen w-auto"><Image src={line} alt="line"/></div>
-       <div className="absolute top-[1000px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden"><Image src={line2} alt="line"/></div>
+       {/* <div className="absolute top-[1000px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden"><Image src={line2} alt="line"/></div> */}
  
        <div className="w-1/2 m-auto mt-32">
        
@@ -27,6 +27,9 @@ export default function Events(){
         <div className=" h-52 justify-center w-[100%] hidden lg:flex p-5"><Image src={rightlogo} alt="GDG-Logo"/></div>
     </div>
        </div>
+       </div>
+       <div className=" flex justify-center w-[90%] bg-blue-500 m-auto p-4 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
+        <Form></Form>
        </div>
        </>
     )
