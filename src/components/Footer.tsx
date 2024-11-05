@@ -34,7 +34,7 @@ export function Footer(){
             </div>
         <div className="text-gray-500 m-auto md:m-0">
             <p className="font-bold text-lg text-gray-300 md:text-left text-center">Socials</p>
-            <div className="grid grid-cols-2 grid-rows-3">
+            <div className="grid grid-cols-2 grid-rows-3 md:w-28">
                 <Image src={linkdin} alt="linkdin" className="md:w-12 md:h-12 w-8 h-8"/>
                 <Image src={x} alt="linkdin" className="md:w-12 md:h-12 w-8 h-8"/>
                 <Image src={instagram} alt="linkdin" className="md:w-12 md:h-12 w-8 h-8"/>
