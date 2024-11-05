@@ -6,8 +6,7 @@ import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
 import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
-import { ProfileForm } from "@/components/Form";
-
+import Form from "@/components/Form";
 export default function Events(){
     return(
         <>
@@ -29,7 +28,9 @@ export default function Events(){
     </div>
        </div>
        </div>
-       <ProfileForm />
+       <div className=" flex justify-center w-[90%] bg-blue-500 m-auto p-4 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
+        <Form></Form>
+       </div>
        </>
     )
 }

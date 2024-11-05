@@ -10,7 +10,7 @@ import heart from "@/assets/heart.svg"
 
 export function Footer(){
 
-    return<div className="bg-black rounded-3xl m-10 p-4">
+    return<div className="bg-black rounded-3xl m-8 p-3">
         <div className="flex md:flex-row flex-col  items-center md:items-baseline">
         <div className="flex flex-col md:w-1/3 w-2/3 items-center pt-4"><Image src={logo} alt="gdg-logo"/>
         <h3 className="text-gray-500">on campus, BIET lucknow</h3>
