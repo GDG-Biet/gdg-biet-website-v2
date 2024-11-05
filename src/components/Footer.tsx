@@ -7,6 +7,7 @@ import github from "@/assets/github.svg"
 import youtube from "@/assets/youtube.svg"
 import discord from "@/assets/discord.svg"
 import heart from "@/assets/heart.svg"
+
 export function Footer(){
 
     return<div className="bg-black rounded-3xl m-10 p-4">
