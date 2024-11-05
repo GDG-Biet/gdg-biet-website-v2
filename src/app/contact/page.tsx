@@ -1,12 +1,12 @@
 import Image from "next/image";
 import line from "@/assets/line1.svg"
-import line2 from "@/assets/line2.svg"
 import Square from "@/assets/BlueSquare.svg"
 import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
 import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
 import Form from "@/components/Form";
+import Animation from "@/components/animation/Animation"
 export default function Events(){
     return(
         <>
@@ -27,6 +27,8 @@ export default function Events(){
         <div className=" h-52 justify-center w-[100%] hidden lg:flex p-5"><Image src={rightlogo} alt="GDG-Logo"/></div>
     </div>
        </div>
+       <Animation></Animation>
+       
        </div>
        <div className=" flex justify-center w-[90%] bg-blue-500 m-auto p-4 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
         <Form></Form>
