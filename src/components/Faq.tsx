@@ -1,49 +1,62 @@
-"use client";
-/* eslint-disable prefer-const */
+"use client"
+import { useState } from 'react'
+import Image from 'next/image'
+import heart from '@/assets/heart.svg'
+import data from "@/Data/data.json"
+import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
 
-import { useState } from "react";
-
-export default function Faqs() {
-  const [openQuestion, setOpenQuestion] = useState < number | null >(null);
-
-  function handler(key:number) {
-    setOpenQuestion(openQuestion === key ? null : key);
-  }
-
-  let questions: {
-    key: number;
-    question: string;
-    answer: string;
-  }[];
-  questions = [
-    { key: 1, question: "What is gdsc?", answer: "GDSC is a " },
-    { key: 2, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 3, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 4, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 5, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 6, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 7, question: "What is gdsc?", answer: "GDSC is a community" },
-    { key: 8, question: "What is gdsc?", answer: "GDSC is a community" },
-  ];
+type Props = {
+    question: string,
+    answer: string,
+    turn: boolean[],
+    setTurn: Dispatch<SetStateAction<boolean[]>>,
+    idx: number
+}
+export default function Home() {
+  const [active, setActive] = useState([false, false, false, false, false]);
   return (
-    <div>
-      <div className="w-11/12 grid grid-rows-8 bg-slate-300 m-auto p-2">
-        {questions.map((que) => {
-          return (
-            <div key={que.key} className="p-4 border-l-2 border-white">
-              <p
-                className=" text-xl border-b-2 font-semibold cursor-pointer"
-                onClick={() => handler(que.key)}
-              >
-                {que.question}
-              </p>
-              <p className="text-lg px-2 py-">
-                {openQuestion === que.key ? que.answer: ""}
-                </p>
-            </div>
-          );
-        })}
-      </div>
+      <div className='grid place-items-center w-full'>
+      {data.map((que)=>{
+        return (
+            <div className='w-full' key={que.idx}>
+                <Accordion question={que.question} answer={que.answer} turn={active} setTurn={setActive} idx={que.idx}/>
+            </div>)
+      })}
     </div>
-  );
+  )
+}
+
+const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(()=>{
+      if(contentRef.current){
+          contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px`:"0px"
+      }
+  },[contentRef, turn, idx])
+
+  const handler = () => {
+      const newTurn = [...turn!]
+      newTurn[idx] = !newTurn[idx]
+      setTurn!(newTurn)
+  }
+return (
+  <div className='flex flex-col items-center justify-center w-full px-2 text-lg lg:text-base'>
+    <button onClick={handler} className={`bg-white dark:bg-gray-900 bg-opacity-40 m-2 border-2 border-gray:900 rounded-lg px-5 shadow cursor-pointer w-full h-full ${turn![idx]}`}>
+      <div className='py-3'>
+         <div className='flex items-center justify-between h-14 text-left'>
+            <span className='ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-sky-600'>{question}</span>
+            <div>
+             {turn![idx] ? <Image src={heart} alt="" width={20} height={20}/> :
+              <Image src={heart} alt="" width={20} height={20}/>}
+            </div>
+         </div>
+         <div ref={contentRef} className='mx-4 overflow-hidden text-left transition-all duration-500 h-full'>
+            <p className='py-1 font-normal leading-normal text-justify whitespace-pre-line text-xs lg:text-lg'>{answer}</p>
+         </div>
+      </div>
+    </button>
+  </div>
+)
 }

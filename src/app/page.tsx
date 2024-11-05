@@ -189,8 +189,8 @@ export default function Home() {
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           FAQs
         </h3>
-        <div className="w-full mt-5">
-          <div className="md:w-5/6 bg-red-200 m-auto">
+        <div className="w-full mt-5 flex justify-center">
+          <div className="  m-20 p-4 bg-red-200 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
             <FAQs />
           </div>
         </div>
