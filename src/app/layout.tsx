@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { BackgroundLines } from "@/components/ui/background-lines";
 
 export const metadata: Metadata = {
   title: "GDGC-Biet",
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-slate-950">
-      {/* <BackgroundLines > */}
         <div className="h-28 w-full flex justify-center pt-3 font-Lato sticky top-5 z-40">
           <Navbar></Navbar>
         </div>
@@ -26,7 +24,6 @@ export default function RootLayout({
         <div className="w-full">
           <Footer></Footer>
         </div>
-      {/* </BackgroundLines> */}
       </body>
     </html>
   );

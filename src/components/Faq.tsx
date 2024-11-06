@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import heart from '@/assets/heart.svg'
-import data from "@/Data/data.json"
+import data from "@/Data/faqdata.json"
 import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
 
 type Props = {

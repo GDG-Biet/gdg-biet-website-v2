@@ -3,7 +3,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 export default function Form() {
   return (
-    <div className='flex justify-center flex-col dark:bg-gray-900 bg-opacity-40 bg-white w-11/12 m-10 rounded-xl'>
+    <div className='flex justify-center flex-col dark:bg-gray-900 bg-opacity-40 bg-white w-11/12 m-8 rounded-xl p-3'>
       <h1 className='dark:bg-blue-500 text-white font-bold text-5xl bg-black w-full text-center rounded-xl p-10  bg-opacity-75 m-auto drop-shadow-xl'>Get in Touch</h1>
     <form className=" md:gap-2 lg:w-2/3 md:grid md:w-4/5 md:m-auto md:grid-cols-3 md:grid-rows-6 items-center w-full m-2 p-2 flex flex-col">
       

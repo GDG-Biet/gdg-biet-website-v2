@@ -11,15 +11,8 @@ import SquareGray from "@/assets/Square.svg";
 import Group from "@/assets/Group.svg";
 import arc from "@/assets/arc.svg";
 import hexagon from "@/assets/hexagon.svg";
-import ActionAreaCard from "@/components/ui/Card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
+import EventCarousel from "@/components/EventCarousel";
+import Sponsers from "@/components/Sponsers";
 export default function Home() {
   return (
     <div className="w-min-[1280px] mx-auto">
@@ -76,33 +69,7 @@ export default function Home() {
           </h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
         </div>
-        <div className="w-4/5 h-[425px] bg-slate-500 dark:bg-slate-700 dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">
-          <div className="justify-center flex">
-            <Carousel className="my-10 mx-10 md:w-auto w-4/5">
-              <CarouselContent>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <ActionAreaCard />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+        <EventCarousel></EventCarousel>
 
           <Image
             src={Triangle}
@@ -115,7 +82,7 @@ export default function Home() {
             className="absolute -left-20 bottom-[-10rem] -z-10"
           />
         </div>
-      </div>
+        
       {/* About Section */}
       <div className="grid sm:grid-cols-2 gap-5 w-11/12 m-auto">
         <div className="w-full h-auto flex justify-center items-center">
@@ -173,7 +140,9 @@ export default function Home() {
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           Sponsors
         </h3>
-        <div className="w-full bg-slate-200 h-16 mt-5"></div>
+        <div className="w-full  h-auto">
+          <Sponsers></Sponsers>
+        </div>
       </div>
       {/* Story*/}
       <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
