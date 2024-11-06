@@ -11,19 +11,19 @@ export default function Events() {
   return (
     <>
       {/* Hero Section */}
-      <div className="lg:h-[80vh] mb-20">
+      <div className="lg:h-[63vh]">
         <div>
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
           />
         </div>
         <div>
           <Image
             src={Circle}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 top-[50vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
           />
         </div>
         <div className="absolute -top-4 right-0 -z-10 h-screen w-auto">
@@ -50,10 +50,10 @@ export default function Events() {
         </div>
       </div>
 
-      <div className="w-full border-b-2">
-        <h1 className="h-auto text-left font-extrabold text-4xl mx-10 rounded-2xl text-gray-500 ">Upcoming Events</h1>
+      <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500">
+        <h1 className="h-auto text-left font-extrabold text-6xl mx-10 rounded-2xl dark:text-red-400 text-slate-500 ">Upcoming Events</h1>
       </div>
-      <div className="h-auto bg-red-400 w-5/6 md:m-auto my-2 mx-2 p-3 rounded-2xl">
+      <div className="h-auto bg-red-400 dark:bg-gray-900 w-5/6 md:m-auto m-auto p-3 rounded-2xl">
         
       {eventdata.map((event) => (
         <div key={event.idx} className='w-full'>
@@ -62,6 +62,8 @@ export default function Events() {
             title={event.title}
             description={event.description}
             image={event.image}
+            tech={event.tech}
+            link={event.link}
           />
           
         </div>
