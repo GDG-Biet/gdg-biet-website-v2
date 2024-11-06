@@ -1,0 +1,14 @@
+[
+    {
+        "idx": 1,
+        "image":"https://s3.amazonaws.com/organizer.mlh.io/d06d8xbt4bpqal64q0jm38vln77v?response-content-disposition=inline%3B%20filename%3D%22hactoberfest1.png%22%3B%20filename%2A%3DUTF-8%27%27hactoberfest1.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJFCF2ZS25I2RWYBQ%2F20241106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241106T184154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f7d2329635a4121d16a1c07e68c82722f0a431efdd44197c95b5acad444c9f03",
+        "title":"Build with AI",
+        "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"
+    },
+    {
+        "idx": 1,
+        "image":"https://s3.amazonaws.com/organizer.mlh.io/d06d8xbt4bpqal64q0jm38vln77v?response-content-disposition=inline%3B%20filename%3D%22hactoberfest1.png%22%3B%20filename%2A%3DUTF-8%27%27hactoberfest1.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJFCF2ZS25I2RWYBQ%2F20241106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241106T184154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f7d2329635a4121d16a1c07e68c82722f0a431efdd44197c95b5acad444c9f03",
+        "title":"Build with GDG",
+        "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"
+    }
+]
