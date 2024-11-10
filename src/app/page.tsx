@@ -12,7 +12,7 @@ import Group from "@/assets/Group.svg";
 import arc from "@/assets/arc.svg";
 import hexagon from "@/assets/hexagon.svg";
 import EventCarousel from "@/components/EventCarousel";
-import Sponsers from "@/components/Sponsers";
+import Sponsers2 from "@/components/Sponsers";
 export default function Home() {
   return (
     <div className="w-min-[1280px] mx-auto">
@@ -22,7 +22,7 @@ export default function Home() {
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0 fill-yellow-500"
           />
         </div>
         <div>
@@ -123,14 +123,14 @@ export default function Home() {
           <Image
             src={arc}
             alt="arc"
-            className="lg:right-28 right-0  absolute h-16 lg:h-48 "
+            className="lg:right-28 right-0  absolute h-16 lg:h-48 animate-spin duration-[30s] ease-in-out repeat-infinite"
           />
         </div>
-        <div>
+        <div className="">
           <Image
             src={hexagon}
             alt="arc"
-            className=" sm:left-10 absolute h-24 lg:h-48 "
+            className=" sm:left-10 absolute h-24 lg:h-48 duration-1000 ease-in-out"
           />
         </div>
       </div>
@@ -141,7 +141,7 @@ export default function Home() {
           Sponsors
         </h3>
         <div className="w-full  h-auto">
-          <Sponsers></Sponsers>
+          <Sponsers2></Sponsers2>
         </div>
       </div>
       {/* Story*/}

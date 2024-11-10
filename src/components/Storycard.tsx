@@ -13,7 +13,7 @@ export default function Storycard(){
             <Image src={person} alt="image" className="lg:w-32 lg:h-32 w-20 h-20 rounded-full"/>
             <div className="flex flex-row gap-2 mt-2">
                 <Image src={x} alt="twitter" className="w-5 h-5 lg:w-10 lg:h-10"></Image>
-                <Image src={linkdin} alt="twitter" className="w-5 h-5 lg:w-10 lg:h-10"></Image>
+                <Image src={linkdin} alt="twitter" className="w-5 h-5 lg:w-10 lg:h-10 "></Image>
             </div>
             </div>
     </div>

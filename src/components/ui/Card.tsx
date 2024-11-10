@@ -40,7 +40,7 @@ const TechStack : React.FC<TechStackProps> = ({tech,idx})=>{
 
   return tech.map((stack) => {
    
-    return <div className=" m-2 p-2 bg-blue-400 bg-opacity-30 rounded-md flex justify-center items-center" key={idx}><p className="font-bold">{stack}</p></div>;
+    return <div className=" m-2 px-2 bg-blue-400 bg-opacity-30 rounded-md flex justify-center items-center" key={idx}><p className="font-bold">{stack}</p></div>;
   });
 
 
