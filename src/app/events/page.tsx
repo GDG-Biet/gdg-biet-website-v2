@@ -53,8 +53,7 @@ export default function Events() {
       <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500">
         <h1 className="h-auto text-left font-extrabold text-6xl mx-10 rounded-2xl dark:text-red-400 text-slate-500 ">Upcoming Events</h1>
       </div>
-      <div className="h-auto bg-red-400 dark:bg-gray-900 w-5/6 md:m-auto m-auto p-3 rounded-2xl">
-        
+      <div className="h-auto bg-red-400 dark:bg-opacity-0 w-5/6 md:m-auto m-auto p-3 rounded-2xl">
       {eventdata.map((event) => (
         <div key={event.idx} className='w-full'>
           <Eventcard

@@ -8,8 +8,6 @@ import {
   } from "@/components/ui/carousel";
   import Autoplay from "embla-carousel-autoplay";
   import Card from "@/components/ui/Card";
-
-
   
 export default function EventCarousel(){
     return<div className="w-4/5 h-auto bg-slate-700 backdrop-blur-md dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">

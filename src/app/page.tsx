@@ -62,25 +62,26 @@ export default function Home() {
         </div>
       </div>
       {/* Event Section */}
-      <div className="flex justify-center -z-10 flex-col h-[90vh] lg:h-[80vh]">
+      <div className="flex justify-center relative -z-10 flex-col h-[90vh] lg:h-[80vh]">
         <div className="flex gap-4 flex-row items-center justify-center">
           <h3 className="tracking-widest text-5xl font-semibold text-center justify-center relative z-10 text-black dark:text-gray-500">
             Events
           </h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
-        </div>
-        <EventCarousel></EventCarousel>
-
           <Image
             src={Triangle}
             alt="Triangle"
-            className="absolute -right-20 -bottom-20 -z-0"
+            className="absolute right-5 -bottom-0 -z-0"
           />
           <Image
             src={SquareGray}
             alt="Triangle"
-            className="absolute -left-20 bottom-[-10rem] -z-10"
+            className="absolute left-5 -bottom-0 -z-10" 
           />
+        </div>
+        <EventCarousel></EventCarousel>
+
+          
         </div>
         
       {/* About Section */}
@@ -130,7 +131,8 @@ export default function Home() {
           <Image
             src={hexagon}
             alt="arc"
-            className=" sm:left-10 absolute h-24 lg:h-48 duration-1000 ease-in-out"
+            className=" sm:left-10 absolute h-24 lg:h-48 duration-1000 ease-in-out"  
+            //  Animation  need to trigger on scroll
           />
         </div>
       </div>
@@ -149,7 +151,7 @@ export default function Home() {
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           Stories
         </h3>
-        <div className=" bg-blue-600 bg-opacity-50 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
+        <div className=" bg-blue-400 bg-opacity-60 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
         </div>
       </div>

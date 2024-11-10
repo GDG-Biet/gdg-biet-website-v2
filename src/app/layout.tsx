@@ -20,7 +20,6 @@ export default function RootLayout({
           <Navbar></Navbar>
         </div>
         {children}
-
         <div className="w-full">
           <Footer></Footer>
         </div>
