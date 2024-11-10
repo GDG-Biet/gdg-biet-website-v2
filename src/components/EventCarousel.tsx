@@ -29,7 +29,17 @@ export default function EventCarousel(){
           <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
       idx= {1}
-      image={"/cat.jpg"}
+      image={"/BuildWithAI.png"}
+      title={"Build with AI"}
+      description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
+      tech = {["AI","Web"]}
+      link = {"https://stackoverflow.com/questions/55075740/property-does-not-exist-on-type-intrinsicattributes"}
+    />
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <Card
+      idx= {1}
+      image={"/BuildWithAI.png"}
       title={"Build with AI"}
       description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
       tech = {["AI"]}
@@ -39,7 +49,7 @@ export default function EventCarousel(){
           <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
       idx= {1}
-      image={"/cat.jpg"}
+      image={"/BuildWithAI.png"}
       title={"Build with AI"}
       description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
       tech = {["AI"]}
@@ -49,7 +59,7 @@ export default function EventCarousel(){
           <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
       idx= {1}
-      image={"/cat.jpg"}
+      image={"/BuildWithAI.png"}
       title={"Build with AI"}
       description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
       tech = {["AI"]}
@@ -59,17 +69,7 @@ export default function EventCarousel(){
           <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
       idx= {1}
-      image={"/cat.jpg"}
-      title={"Build with AI"}
-      description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
-      tech = {["AI"]}
-      link = {"https://stackoverflow.com/questions/55075740/property-does-not-exist-on-type-intrinsicattributes"}
-    />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <Card
-      idx= {1}
-      image={"/cat.jpg"}
+      image={"/BuildWithAI.png"}
       title={"Build with AI"}
       description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
       tech = {["AI"]}
@@ -79,7 +79,7 @@ export default function EventCarousel(){
           <CarouselItem className="md:basis-1/2 lg:basis-1/3">
            <Card
       idx= {1}
-      image={"/cat.jpg"}
+      image={"/BuildWithAI.png"}
       title={"Build with AI"}
       description={"Hi Amar, I am a bot that can help you with your queries. How can I help you today?"}
       tech = {["AI"]}
