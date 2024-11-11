@@ -5,12 +5,13 @@ import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
 import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
+import ProjectCard from "@/components/ProjectCard";
+import projects from "@/Data/projects.json";
 
 export default function Projects(){
-    return(
-        <>
+    return(<>
         {/* Hero Section */}
-      <div className="lg:h-[1090vh] pt-20 bg-blueprint">
+      <div className="lg:h-[90vh] pt-20 bg-blueprint">
         <div className="absolute w-full h-full top-0 bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 backdrop-blur-sm -z-10"></div>
         <div>
           <Image
@@ -30,7 +31,7 @@ export default function Projects(){
           <Image src={line} alt="line" />
         </div>
 
-        <div className="w-2/3 m-auto mt-32">
+        <div className="w-2/3 m-auto mt-32 h-36">
           <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center h-full">
             {/* logo for smaller screen */}
             <div className="lg:hidden h-10">
@@ -49,6 +50,23 @@ export default function Projects(){
           </div>
         </div>
       </div>
-       </>
+        <h2 className="lg:text-6xl text-4xl  w-full font-bold font-mono lg:text-left text-center border-b-4 border-black p-4">Projects by GDG</h2>
+        <div className="w-5/6 m-auto gap-5 my-10">
+      {projects.map((project) => (
+        <div key={project.idx} className=''>
+          <ProjectCard
+            idx={project.idx}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            Github={project.github}
+            liveLink={project.liveLink}
+          />
+          
+        </div>
+      ))}
+
+      </div>
+      </>
     )
 }

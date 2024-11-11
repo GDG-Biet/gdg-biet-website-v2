@@ -11,7 +11,6 @@ export default function Hackathon(){
         <>
        {/* Hero Section */}
       <div className="lg:h-[90vh] pt-20">
-        <div className="absolute w-full h-full top-0 bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 backdrop-blur-sm -z-10"></div>
         <div>
           <Image
             src={Square}
@@ -49,6 +48,7 @@ export default function Hackathon(){
           </div>
         </div>
       </div>
+      <div className="w-full h-40 text-5xl text-center font-mono shadow-2xl font-thin"> <p>Coming Soon</p> </div>
        </>
     )
 }

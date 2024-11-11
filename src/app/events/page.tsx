@@ -75,7 +75,7 @@ export default function Events() {
       <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500 mt-20">
         <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Archive Events</h1>
       </div>
-      <div className="grid grid-cols-2 dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
+      <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
       {archiveEvent.map((event) => (
         <div key={event.idx} className='w-full '>
           <ArchiveEventCard
