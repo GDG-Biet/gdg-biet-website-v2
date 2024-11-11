@@ -16,7 +16,7 @@ type EventCardProps = {
 
 const ProjectCard: React.FC<EventCardProps> = ({title, description,image,idx,Github,liveLink}) => {
   return (
-    <div className="w-full flex lg:flex-row flex-col  rounded-lg dark:bg-opacity-0">
+    <div key={idx} className="w-full flex lg:flex-row flex-col  rounded-lg dark:bg-opacity-0">
         <Image className="" width={500} height={500} src={image} alt=""></Image>
         <div className=" h-full m-auto ml-4 lg:bg-slate-300 dark:bg-opacity-20 rounded-lg" >
         <h2 className="text-2xl font-mono font-semibold p-4 text-center lg:text-left">{title}</h2>
