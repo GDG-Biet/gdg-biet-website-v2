@@ -70,4 +70,12 @@
 body{
   overflow-x: hidden;
   transition: all linear 0.3s;
+  margin: 0px;
+  padding: 0px;
 }
+
+
+
+/* For testing extra Space  */
+/* *{ border: 1px solid red !important; }   */
+
