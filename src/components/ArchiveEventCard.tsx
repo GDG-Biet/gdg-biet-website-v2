@@ -10,6 +10,7 @@ type EventCardProps = {
   image: string;
   tech:string[];
   link:string;
+  docs:string;
 };
 
 type TechStackProps ={
@@ -17,7 +18,7 @@ type TechStackProps ={
   idx: number;
 }
 
-const ArchiveEventCard: React.FC<EventCardProps> = ({title, description,image,idx,tech,link}) =>{
+const ArchiveEventCard: React.FC<EventCardProps> = ({title, description,image,idx,tech,link,docs}) =>{
     return<div key={idx}>
     <div className=" w-full bg-white border-2  dark:border-0 dark:bg-slate-800 dark:bg-opacity-50 rounded-lg flex flex-col">
         <div className="w-full">
@@ -27,7 +28,7 @@ const ArchiveEventCard: React.FC<EventCardProps> = ({title, description,image,id
         <p className="text-lg w-11/12 p-2 m-auto">{description}</p>
         <div className="h-1/6 w-full flex flex-row justify-between">
          <div className="w-full flex flex-row"><TechStack tech={tech} idx={idx}></TechStack></div>
-         <p className="px-5 py-1 text-center font-bold rounded-md bg-green-600 text-xl m-2 text-green-950 shadow-md drop-shadow-lg">Docs</p>
+         <p className="px-5 py-1 text-center font-bold rounded-md bg-green-600 text-xl m-2 text-green-950 shadow-md drop-shadow-lg cursor-pointer"><Link href={docs}>Docs</Link></p>
         </div>
 
     </div>

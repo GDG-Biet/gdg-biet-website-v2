@@ -85,6 +85,7 @@ export default function Events() {
             image={event.image}
             tech={event.tech}
             link={event.link}
+            docs={event.Docs}
           />
           
         </div>
