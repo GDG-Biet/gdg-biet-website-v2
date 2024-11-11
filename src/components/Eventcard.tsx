@@ -19,7 +19,7 @@ type TechStackProps ={
 
 const Eventcard: React.FC<EventCardProps> = ({title, description,image,idx,tech,link}) => {
   return (
-    <div key={idx} className="flex md:flex-row flex-col gap-4 bg-white dark:bg-slate-800 bg-opacity-50 dark:bg-opacity-50 rounded-2xl m-4 p-3 h-auto">
+    <div key={idx} className="flex md:flex-row flex-col gap-4 bg-blue-200 dark:bg-slate-800 bg-opacity-50 dark:bg-opacity-50 rounded-2xl m-4 p-3 h-auto">
       <div className="md:w-2/5 rounded-lg">
       <Link href={link}><Image className="w-[100%] h-auto rounded-2xl" width={500} height={500} src={image} alt="Event Image" /></Link> 
       </div>
