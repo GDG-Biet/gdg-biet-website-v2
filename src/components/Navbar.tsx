@@ -3,18 +3,27 @@ import Image from "next/image"
 import light from "../assets/lightMode.svg"
 import dark from "@/assets/dark.svg"
 import Link from "next/link"
+import { Dispatch, SetStateAction, useState } from "react"
+
+// type menuprops={
+//     menu:string;
+//     setMenu:Dispatch<SetStateAction<string>>;
+
+// }
+
 export function Navbar(){
+    const [menu,setMenu]=useState("home");
     return<div className="flex justify-center w-full">
         <div className="dark:text-gray-400 lg:bg-rose-100 lg:bg-opacity-10 w-11/12 rounded-full lg:shadow-lg lg:backdrop-blur-md flex lg:justify-between justify-center items-center p-5 mt-2 lg:border-2 border-black">
-        <Link href="/"><Logo></Logo></Link>
-        <Menu></Menu>
+        <Link href="/"><Logo menu={menu} setMenu={setMenu}></Logo></Link>
+        <Menu menu={menu} setMenu={setMenu}></Menu>
         </div>
     </div>
 }
 
-function Logo(){
-
-    return<div className="lg:bg-none lg:shadow-none shadow-lg lg:rounded-none rounded-full lg:backdrop-blur-none backdrop-blur-md lg:p-0 p-2 lg:border-0 border-2 border-black">
+function Logo({menu,setMenu}){
+    return<div onClick={()=>{setMenu("home")}} className="lg:bg-none lg:shadow-none shadow-lg lg:rounded-none rounded-full lg:backdrop-blur-none backdrop-blur-md lg:p-0 p-2 lg:border-0 border-2 border-black">
+        {/* GDG-LOGO */}
         <div className="">
 <svg width="490" height="36" viewBox="0 0 490 40" fill="none">
 <path className="dark:fill-gray-400 fill-gray-900" d="M92.9229 29.5385C90.9229 28.3077 89.3845 26.7692 88.1537 24.7692C86.9229 22.7692 86.4614 20.4615 86.4614 18C86.4614 15.5385 87.0768 13.2308 88.1537 11.2308C89.3845 9.23076 90.9229 7.53844 92.9229 6.46152C94.9229 5.23075 97.0768 4.76923 99.5384 4.76923C101.385 4.76923 103.231 5.0769 104.769 5.69229C106.461 6.30767 107.692 7.23076 108.769 8.46152L106.615 10.6154C105.846 9.69228 104.769 8.92305 103.538 8.30767C102.308 7.84613 100.923 7.53844 99.5384 7.53844C97.6922 7.53844 96.1537 7.99998 94.6153 8.76921C93.0768 9.69229 91.846 10.9231 90.923 12.4615C89.9999 14 89.5383 15.8462 89.5383 17.8462C89.5383 19.8462 89.9999 21.6923 90.923 23.2308C91.846 24.7692 93.0768 26 94.6153 26.9231C96.1537 27.8461 97.846 28.1538 99.5384 28.1538C101.231 28.1538 102.615 27.8461 103.846 27.3846C104.923 26.923 106 26.1538 106.769 25.2307C107.384 24.6154 107.846 23.6923 108.308 22.7692C108.615 21.8461 108.923 20.7692 108.923 19.6923H99.5384V16.9231H111.692C111.846 17.5384 111.846 18.1539 111.846 18.7692C111.846 20.3077 111.538 21.8462 111.077 23.3846C110.615 24.9231 109.846 26.1539 108.769 27.2308C106.308 29.6923 103.231 31.0769 99.3845 31.0769C97.0768 31.2308 94.9229 30.7692 92.9229 29.5385Z" fill="#656C73"/>
@@ -48,7 +57,7 @@ function Logo(){
     </div>
 }
 
-function Menu(){
+function Menu({menu,setMenu}){
     const toggleTheam =()=>{
          document.documentElement.classList.toggle("dark");
          
@@ -57,11 +66,11 @@ function Menu(){
     return<div className="lg:w-1/3 w-3/4 fixed lg:static object-center bottom-10 bg-red-10 dark:bg-black dark:bg-opacity-0 bg-opacity-50 backdrop-blur-lg bg-gray-200 lg:bg-transparent lg:bg-opacity-0 lg:backdrop-blur-none rounded-3xl  p-3 ">
                 {/* Width must be 1/2 if hackathon is present and if not then 1/3 */}
         <ul className="flex lg:flex-row flex-row justify-around items-left gap-3">
-            <li className="lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400"><Link href="/events">Events</Link></li>
-            {/* <li className="lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400"><Link href="/hackathon">Hackathon</Link></li> */}
-            <li className="lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400"><Link href="/projects">Projects</Link></li>
-            <li className="lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400"><Link href="/team">Team</Link></li>
-            <li className="lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400"><Link href="/contact">Contact us</Link></li>
+            <li onClick={()=>{setMenu("event")}} className={`${menu=="event"?"border-b-4":""} border-red-500 lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400`}><Link href="/events">Events</Link></li>
+            {/* <li onClick={()=>{setMenu("hack")}} className={`${menu=="hack"?"border-b-2":""} lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400`}><Link href="/hackathon">Hackathon</Link></li> */}
+            <li onClick={()=>{setMenu("project")}} className={`${menu=="project"?"border-b-4":""} border-blue-500 lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400`}><Link href="/projects">Projects</Link></li>
+            <li onClick={()=>{setMenu("team")}} className={`${menu=="team"?"border-b-4":""} border-green-500 lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400`}><Link href="/team">Team</Link></li>
+            <li onClick={()=>{setMenu("contact")}} className={`${menu=="contact"?"border-b-4":""} lg:text-lg sm:text-sm text-xs font-semibold text-gray-900 dark:text-gray-400`}><Link href="/contact">Contact us</Link></li>
             <button><Image onClick={toggleTheam} src={light} alt="Picture of the author "className=" dark:hidden lg:h-9 h-5"/><Image onClick={toggleTheam} src={dark} alt="Picture of the author"className="dark:block hidden lg:h-9 h-5"/></button>
         </ul>
     </div>
