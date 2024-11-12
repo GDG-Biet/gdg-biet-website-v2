@@ -69,7 +69,7 @@ export default function Home() {
           </h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
         </div>
-        <EventCarousel></EventCarousel>
+        <EventCarousel />
 
           <Image
             src={Triangle}

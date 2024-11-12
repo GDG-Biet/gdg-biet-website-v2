@@ -1,13 +1,13 @@
 import Image from "next/image";
 import line from "@/assets/line1.svg"
-import line2 from "@/assets/line2.svg"
 import Square from "@/assets/BlueSquare.svg"
 import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
 import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
+import Teamcard from "@/components/Teamcard";
 
-export default function Events(){
+export default function Teams(){
     return(
         <>
         {/* Hero Section */}
@@ -28,6 +28,8 @@ export default function Events(){
     </div>
        </div>
        </div>
+
+       <Teamcard />
        </>
     )
 }
