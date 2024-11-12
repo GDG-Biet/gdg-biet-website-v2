@@ -1,37 +1,19 @@
-import Image from "next/image";
-import line from "@/assets/line1.svg"
-import Square from "@/assets/BlueSquare.svg"
-import Circle from "@/assets/GreenCircle.svg"
-import MobileLogo from "@/assets/MobileLogo.svg"
-import leftlogo from "@/assets/LeftLogo.svg"
-import rightlogo from "@/assets/RightLogo.svg"
 import Form from "@/components/Form";
 import Animation from "@/components/animation/Animation"
 export default function Events(){
     return(
         <>
         {/* Hero Section */}
-      <div className="lg:h-[80vh] mb-20">
-      <div><Image src={Square} alt="Element-Square" className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0"/></div>
-      <div><Image src={Circle} alt="Element-Square" className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 top-[50vh] -z-0"/></div>
-       <div className="absolute -top-4 right-0 -z-10 h-screen w-auto"><Image src={line} alt="line"/></div>
-       {/* <div className="absolute top-[1000px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden"><Image src={line2} alt="line"/></div> */}
- 
-       <div className="w-1/2 m-auto mt-32">
-       
-       <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center h-full">
-        {/* logo for smaller screen */}
-        <div className="lg:hidden h-10"><Image src={MobileLogo} alt="GDG-Logo"/></div> 
-       <div className=" h-52 justify-center w-[100%] hidden lg:flex p-5"><Image src={leftlogo} alt="GDG-Logo"/></div> 
-        <div className="text-center lg:text-6xl text-5xl font-Lato text-[#656C73]"><strong className="text-yellow-500">C</strong>ontact<br/></div>
-        <div className=" h-52 justify-center w-[100%] hidden lg:flex p-5"><Image src={rightlogo} alt="GDG-Logo"/></div>
-    </div>
-       </div>
-       <Animation></Animation>
-       
-       </div>
-       <div className=" flex justify-center w-[90%] bg-blue-500 m-auto p-4 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl">
+      <div className="h-[30vh]"></div>
+       <div className=" flex justify-center w-[90%] bg-blue-500 m-auto p-4 dark:bg-gray-900 dark:bg-opacity-50 backdrop-blur-lg rounded-xl relative">
         <Form></Form>
+       </div>
+       <div className="absolute top-48 w-full flex justify-center"><Animation></Animation></div>
+       <div className="w-5/6 m-auto mt-20">
+        <h2 className="cursor-pointer text-5xl font-bold text-slate-300 hover:text-slate-800 w-auto hover:border-b-4 duration-300">Want to collab?</h2>
+        <div className=" cursor-pointer p-20 flex justify-center items-center text-purple-600 hover:text-purple-400 bg-purple-400 hover:bg-purple-600 rounded-full my-10 duration-300">
+            <p className="text-5xl font-extrabold"><a href="mailto:bietgdsc2023@gmail.com">Send us a Mail</a></p>
+            </div>
        </div>
        </>
     )

@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'crowd': "url('/eventbg.jpg')",
+        'blueprint':"url(/ouler.png)"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,6 +78,7 @@ const config = {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 

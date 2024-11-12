@@ -1,7 +1,7 @@
 [
     {
         "idx": 1,
-        "image":"/cat.jpg",
+        "image":"/BuildWithAI.png",
         "title":"Build with AI",
         "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?",
         "tech" : ["AI","Android"],
@@ -9,7 +9,7 @@
     },
     {
         "idx": 2,
-        "image":"/cat.jpg",
+        "image":"/BuildWithAI.png",
         "title":"Build with GDG",
         "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?",
         "tech" : ["AI","Android"],

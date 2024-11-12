@@ -16,11 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-slate-950">
-        <div className="h-28 w-full flex justify-center pt-3 font-Lato sticky top-5 z-40">
+        <div className="h-28 w-full flex justify-center pt-3 font-Lato fixed top-5 z-40">
           <Navbar></Navbar>
         </div>
         {children}
-
         <div className="w-full">
           <Footer></Footer>
         </div>

@@ -7,7 +7,7 @@ import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
 
 type Props = {
     question: string,
-    answer: string,
+    answer: string | string[],
     turn: boolean[],
     setTurn: Dispatch<SetStateAction<boolean[]>>,
     idx: number

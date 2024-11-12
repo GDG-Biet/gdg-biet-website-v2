@@ -1,7 +1,6 @@
 import Image from "next/image";
 import line from "@/assets/line1.svg";
 import line2 from "@/assets/line2.svg";
-import HeroLogo from "@/components/HeroLogo";
 import Storycard from "@/components/Storycard";
 import FAQs from "@/components/Faq";
 import Square from "@/assets/BlueSquare.svg";
@@ -12,38 +11,39 @@ import Group from "@/assets/Group.svg";
 import arc from "@/assets/arc.svg";
 import hexagon from "@/assets/hexagon.svg";
 import EventCarousel from "@/components/EventCarousel";
-import Sponsers from "@/components/Sponsers";
+import Sponsers2 from "@/components/Sponsers";
+import Headerlogo from "@/components/animation/HeaderLogo";
 export default function Home() {
   return (
-    <div className="w-min-[1280px] mx-auto">
+    <div className="w-min-[1280px] mx-auto ">
       {/* Hero Section */}
-      <div className="lg:h-[80vh] mb-20">
+      <div className="lg:h-[80vh] mb-20 pt-20 relative">
         <div>
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0"
+            className="md:block hidden lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 top-[40vh] -z-0 fill-yellow-500"
           />
         </div>
         <div>
           <Image
             src={Circle}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 top-[50vh] -z-0"
+            className="md:block hidden lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 top-[50vh] -z-0"
           />
         </div>
-        <div className="absolute -top-4 right-0 -z-10 h-screen w-auto">
+        <div className="absolute -top-4 lg:right-0 -right-10 -z-10 h-screen w-auto">
           <Image src={line} alt="line" />
         </div>
-        <div className="absolute top-[1000px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden">
+        <div className="absolute top-[700px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden">
           <Image src={line2} alt="line" />
         </div>
 
-        <div className="w-1/2 m-auto mt-32">
-          <HeroLogo></HeroLogo>
+        <div className="w-full flex justify-center mt-32">
+          <Headerlogo></Headerlogo>
         </div>
         <div className="w-full flex  justify-center mt-5">
-          <h3 className="font-Lato text-black dark:text-white font-normal text-center mt-5 text-xl">
+          <h3 className="font-Lato text-gray-900 dark:text-gray-400 font-normal text-center mt-5 text-xl">
             On Campus
             <br />
             <strong className="text-[#FBBC04] mt-10 text-2xl leading-10">
@@ -62,25 +62,26 @@ export default function Home() {
         </div>
       </div>
       {/* Event Section */}
-      <div className="flex justify-center -z-10 flex-col h-[90vh] lg:h-[80vh]">
+      <div className="flex justify-center relative -z-10 flex-col h-[90vh] lg:h-[80vh]">
         <div className="flex gap-4 flex-row items-center justify-center">
           <h3 className="tracking-widest text-5xl font-semibold text-center justify-center relative z-10 text-black dark:text-gray-500">
             Events
           </h3>
           <div className="h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
-        </div>
-        <EventCarousel />
-
           <Image
             src={Triangle}
             alt="Triangle"
-            className="absolute -right-20 -bottom-20 -z-0"
+            className="absolute right-5 -bottom-0 -z-0"
           />
           <Image
             src={SquareGray}
             alt="Triangle"
-            className="absolute -left-20 bottom-[-10rem] -z-10"
+            className="absolute left-5 -bottom-0 -z-10" 
           />
+        </div>
+        <EventCarousel></EventCarousel>
+
+          
         </div>
         
       {/* About Section */}
@@ -123,14 +124,15 @@ export default function Home() {
           <Image
             src={arc}
             alt="arc"
-            className="lg:right-28 right-0  absolute h-16 lg:h-48 "
+            className="lg:right-28 right-0  absolute h-16 lg:h-48 animate-spin duration-1000 ease-in-out repeat-infinite"
           />
         </div>
-        <div>
+        <div className="">
           <Image
             src={hexagon}
             alt="arc"
-            className=" sm:left-10 absolute h-24 lg:h-48 "
+            className=" sm:left-10 absolute h-24 lg:h-48 duration-1000 ease-in-out"  
+            //  Animation  need to trigger on scroll
           />
         </div>
       </div>
@@ -141,7 +143,7 @@ export default function Home() {
           Sponsors
         </h3>
         <div className="w-full  h-auto">
-          <Sponsers></Sponsers>
+          <Sponsers2></Sponsers2>
         </div>
       </div>
       {/* Story*/}
@@ -149,7 +151,7 @@ export default function Home() {
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           Stories
         </h3>
-        <div className=" bg-blue-600 bg-opacity-50 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
+        <div className=" bg-blue-400 bg-opacity-60 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
         </div>
       </div>
