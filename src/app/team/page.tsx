@@ -8,9 +8,8 @@ import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
 import Team from "@/components/Team";
 
+
 export default function Teams(){
-
-
     return(
         <>
         {/* Hero Section */}
