@@ -67,6 +67,12 @@ export default function Projects(){
       ))}
 
       </div>
+
+      <h2 className="lg:text-6xl text-4xl  w-full font-bold font-mono lg:text-left text-center border-b-4 border-black p-4">Upcoming Projects</h2>
+        <div className="w-5/6 m-auto gap-5 my-10">
+      <h3 className="lg:text-4xl text-3xl  w-full font-bold font-mono lg:text-center text-center p-2 text-gray-600">Coming Soon...</h3>
+
+      </div>
       </>
     )
 }
