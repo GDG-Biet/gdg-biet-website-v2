@@ -27,8 +27,8 @@ export default Members;
 
 
 const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
-    return<div className="w-full  flex flex-col items-center gap-4 p-4">
-        <div className="w-full rounded-full"><Image className="w-full object-cover rounded-full" src={image} alt="" width={500} height={750}></Image></div>
+    return<div className="w-full flex flex-col items-center gap-4 p-4 bg-slate-400 bg-opacity-15 rounded-2xl">
+        <div className="w-full rounded-full"><Image className="w-full object-contain rounded-xl" src={image} alt="" width={500} height={750}></Image></div>
         <div className="text-center">
             <h2 className="text-3xl font-bold text-slate-500">{name}</h2>
             <p className="text-xl">{position}</p>
