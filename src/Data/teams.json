@@ -31,7 +31,7 @@
     },
     {
         "idx": 4,
-        "image":"/cat.jpg",
+        "image":"/Team/ShivakantBhaia.jpg",
         "name":"Shivakant Shukla",
         "position":"Tech Co-lead",
         "year":2023,
@@ -42,12 +42,13 @@
     
     {
         "idx": 5,
-        "image":"/Team/Girl.jpeg",
+        "image":"/Team/rahnumaa.jpg",
         "name":"Rehnuma Rahman",
         "position":"Content Writing-Lead",
         "year":2023,
         "linkdin":"https://www.linkedin.com/in/rahnuma-rahman-008034223/",
         "Twitter":"https://x.com/rahnuma_r_?t=Y0E-fd753mkXzJaCoyZBhw&s=09"
+
         
     },
     {
@@ -72,7 +73,7 @@
     },
     {
         "idx": 8,
-        "image":"/cat.jpg",
+        "image":"/Team/apoorv.jpg",
         "name":"Apoorv Kumar",
         "position":"Event Management-Lead",
         "year":2023,
@@ -122,7 +123,7 @@
     },
     {
         "idx": 13,
-         "image":"/cat.jpg",
+         "image":"/Team/Katayani.jpg",
          "name":"Katyayani Mishra",
          "position":"Web developer Co-Organiser",
          "year":2024,
@@ -130,9 +131,9 @@
          "Twitter":"https://www.linkedin.com/in/anshukumar01/"
          
      },
-     {
+     {  
         "idx": 14,
-        "image":"/cat.jpg",
+        "image":"/Team/Boy.jpeg",
         "name":"Aryan Gupta",
         "position":"AI/Ml Organizer",
         "year":2024,
@@ -152,7 +153,7 @@
     },
     {
         "idx": 16,
-        "image":"/cat.jpg",
+        "image":"/Team/nagesh.jpg",
         "name":"Nagesh Tripathi",
         "position":"Data Forge Organizer",
         "year":2024,
@@ -162,7 +163,7 @@
     },
     {
         "idx": 17,
-        "image":"/cat.jpg",
+        "image":"/Team/Boy.jpeg",
         "name":"Vikas Deep Sharma",
         "position":"Social Media Organizer",
         "year":2024,
@@ -172,7 +173,7 @@
     },
     {
         "idx": 18,
-        "image":"/cat.jpg",
+        "image":"/Team/Boy.jpeg",
         "name":"Abhishek Dixit",
         "position":"Social Media Co-Organizer",
         "year":2024,
@@ -182,7 +183,7 @@
     },
     {
         "idx": 19,
-        "image":"/cat.jpg",
+        "image":"/Team/Girl.jpeg",
         "name":"Kavyshree Jaiswal",
         "position":"Event Management Organizer",
         "year":2024,
@@ -192,13 +193,15 @@
     },
     {
         "idx": 20,
-        "image":"/cat.jpg",
+        "image":"/Team/utkarsh.jpg",
         "name":"Utkarsh Upadhayay",
         "position":"Event Management Co-Organizer",
         "year":2024,
         "linkdin":"https://www.linkedin.com/in/utkarsh2005",
-        "Twitter":"https://www.linkedin.com/in/anshukumar01/"
-        
+        "Twitter":"https://x.com/UTKARSHUPA88883"
     }
+
+        
+
     
 ]
