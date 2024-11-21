@@ -6,6 +6,7 @@ import leftlogo from "@/assets/LeftLogo.svg"
 import rightlogo from "@/assets/RightLogo.svg"
 import { useState } from "react";
 import Members from "./Members";
+import Lead from "./Lead";
 
 const Team = ()=>{
   const [year,setYear]=useState(2023);
@@ -18,6 +19,7 @@ const Team = ()=>{
         <div className=" h-full justify-center w-[100%] hidden lg:flex p-5 cursor-pointer" onClick={()=>{setYear(year<2025?year+1:year)}} ><Image src={rightlogo} alt="GDG-Logo"/></div>
       </div>
       <div className=" w-full dark:bg-slate-900 dark:bg-opacity-15 mt-5">
+        <Lead year={year}></Lead>
         <Members
         year={year}
         ></Members>
