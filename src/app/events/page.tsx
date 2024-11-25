@@ -74,28 +74,6 @@ export default function Events() {
       </div>
 
       <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500 mt-20">
-        <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Finished Events</h1>
-      </div>
-
-      <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
-      {archiveEvent.map((event) => (
-        <div key={event.idx} className='w-full '>
-          <ArchiveEventCard
-            idx={event.idx}
-            title={event.title}
-            description={event.description}
-            image={event.image}
-            tech={event.tech}
-            link={event.link}
-            docs={event.Docs}
-          />
-          
-        </div>
-      ))}
-
-      </div>
-
-      <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500 mt-20">
         <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Archive Events</h1>
       </div>
       <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
