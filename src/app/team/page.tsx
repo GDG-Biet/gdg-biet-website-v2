@@ -43,7 +43,7 @@ export default function Teams(){
               <Image src={leftlogo} alt="GDG-Logo" />
             </div>
             <div className="text-center lg:text-9xl text-5xl font-Lato dark:text-white text-gray-400 font-bold">
-              <strong className="text-green-600">T</strong>eams
+              <strong className="text-green-600">T</strong>eam
               <br />
             </div>
             <div className=" h-72 justify-center w-[100%] hidden lg:flex p-5">
