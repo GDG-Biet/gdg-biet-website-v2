@@ -52,8 +52,8 @@ export default function Projects(){
       </div>
         <h2 className="lg:text-6xl text-4xl  w-full font-bold font-mono lg:text-left text-center border-b-4 border-black p-4">Projects by GDG</h2>
         <div className="w-5/6 m-auto gap-5 my-10">
-      {projects.map((project) => (
-        <div key={project.idx} className=''>
+      {projects.map((project,i) => (
+        <div key={i} className=''>
           <ProjectCard
             idx={project.idx}
             title={project.title}

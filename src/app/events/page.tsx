@@ -57,8 +57,8 @@ export default function Events() {
         <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Upcoming Events</h1>
       </div>
       <div className="h-auto  dark:bg-opacity-0 w-5/6 md:m-auto m-auto p-3 rounded-2xl ">
-      {eventdata.map((event) => (
-        <div key={event.idx} className='w-full'>
+      {eventdata.map((event, i) => (
+        <div key={i} className='w-full'>
           <Eventcard
             idx={event.idx}
             title={event.title}
@@ -78,8 +78,8 @@ export default function Events() {
       </div>
 
       <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
-      {archiveEvent.map((event) => (
-        <div key={event.idx} className='w-full '>
+      {archiveEvent.map((event,i) => (
+        <div key={i} className='w-full '>
           <ArchiveEventCard
             idx={event.idx}
             title={event.title}
@@ -99,8 +99,8 @@ export default function Events() {
         <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Archive Events</h1>
       </div>
       <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
-      {archiveEvent.map((event) => (
-        <div key={event.idx} className='w-full '>
+      {archiveEvent.map((event, i) => (
+        <div key={i} className='w-full '>
           <ArchiveEventCard
             idx={event.idx}
             title={event.title}
