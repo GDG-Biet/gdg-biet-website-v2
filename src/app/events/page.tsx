@@ -13,23 +13,23 @@ export default function Events() {
   return (
     <>
       {/* Hero Section */}
-      <div className="lg:h-[90vh] pt-20">
+      <div className="lg:h-[90vh] lg:pt-20">
         <div className="absolute w-full h-full top-0 bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 backdrop-blur-sm -z-10"></div>
         <div>
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
           />
         </div>
         <div>
           <Image
             src={Circle}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
           />
         </div>
-        <div className="absolute -top-4 right-0 -z-0 h-screen w-auto">
+        <div className="absolute lg:block hidden -top-4 right-0 -z-0 h-screen w-auto">
           <Image src={line} alt="line" />
         </div>
 
@@ -102,7 +102,7 @@ export default function Events() {
       {archiveEvent.map((event, i) => (
         <div key={i} className='w-full '>
           <ArchiveEventCard
-            idx={event.idx}
+            idx={event.idx+i}
             title={event.title}
             description={event.description}
             image={event.image}

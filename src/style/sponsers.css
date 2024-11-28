@@ -26,7 +26,7 @@
 }
 
 .wrapper{
-    width: 50%;
+    width: 80%;
     max-width: 1536px;
     height: 100px;
     margin-top: 2rem;
@@ -67,3 +67,11 @@
 .item8{
     animation-delay:calc(30s / 8 * (8 - 8) * -1) ;
 }
+
+@media (min-width: 640px) {
+    .wrapper{
+        width: 50%;
+    }
+
+ }
+    
