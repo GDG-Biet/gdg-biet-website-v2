@@ -9,6 +9,7 @@ import Eventcard from "@/components/Eventcard";
 import eventdata from "@/Data/eventdata.json";
 import archiveEvent from "@/Data/archiveEventdata.json";
 import ArchiveEventCard from "@/components/ArchiveEventCard";
+
 export default function Events() {
   return (
     <>
@@ -102,7 +103,7 @@ export default function Events() {
       {archiveEvent.map((event, i) => (
         <div key={i} className='w-full '>
           <ArchiveEventCard
-            idx={event.idx+i}
+            idx={event.idx}
             title={event.title}
             description={event.description}
             image={event.image}
