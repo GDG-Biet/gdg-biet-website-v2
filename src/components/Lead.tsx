@@ -1,5 +1,5 @@
 
-import teamsdata from "@/Data/teams.json";
+import teamsdata from "@/Data/lead.json";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,11 +13,9 @@ type TeamProps = {
     
   };
   
-
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Members = ({year}:any)=>{
-    return<div className="w-5/6 m-auto grid grid-cols-3 gap-10">
+const Lead = ({year}:any)=>{
+    return<div className="w-1/2 m-auto my-5">
         {teamsdata.map((team)=>{
             if(year==team.year)
            return<Team key={team.idx} name={team.name} position={team.position} twitter={team.Twitter} linkdin={team.linkdin} image={team.image}></Team>
@@ -25,17 +23,18 @@ const Members = ({year}:any)=>{
         
     </div>
 }
-export default Members;
+export default Lead;
 
 
 const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
-    return<div className="w-full flex flex-col items-center gap-4 p-4 bg-slate-400 bg-opacity-15 rounded-2xl">
-        <div className="w-full rounded-full"><Image className="w-full object-contain rounded-xl" src={image} alt="" width={500} height={750}></Image></div>
-        <div className="text-center">
-            <h2 className="text-3xl font-bold text-slate-500">{name}</h2>
+    return<div className="w-full justify-between flex flex-row items-center p-4 bg-slate-400 bg-opacity-15 rounded-full">
+        <div className="w-2/3 rounded-full drop-shadow-lg"><Image className="w-full object-contain rounded-full" src={image} alt="" width={500} height={750}></Image></div>
+       <div className=" w-1/2">
+       <div className="text-center">
+            <h2 className="text-3xl font-bold text-slate-500 drop-shadow-2xl shadow-red-500">{name}</h2>
             <p className="text-xl">{position}</p>
             </div>
-            <div className="grid grid-flow-col col-span-2 mt-2 gap-2">
+            <div className=" w-1/4 m-auto grid grid-flow-col col-span-2 mt-2 place-content-center gap-4">
                 {/* Twitter */}
                 <Link href={twitter}><div className="w-8 h-8 fill-stone-950 dark:fill-white flex justify-center items-center drop-shadow-lg">
                     <svg viewBox="0 0 50 50" width="50px" height="50px">
@@ -49,5 +48,6 @@ const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
                     </svg>
                 </div></Link>
             </div>
+        </div>
     </div>
 }
