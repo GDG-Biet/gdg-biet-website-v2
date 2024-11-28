@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-import line from "@/assets/line1.svg"
 import Square from "@/assets/BlueSquare.svg"
 import Circle from "@/assets/GreenCircle.svg"
 import MobileLogo from "@/assets/MobileLogo.svg"
@@ -13,26 +12,22 @@ export default function Teams(){
     return(
         <>
         {/* Hero Section */}
-      <div className="lg:h-[90vh] pt-20">
+      <div className="lg:h-[90vh] lg:pt-20">
         <div className="absolute w-full h-full top-0 bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 backdrop-blur-sm -z-10"></div>
         <div>
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
           />
         </div>
         <div>
           <Image
             src={Circle}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
           />
         </div>
-        <div className="absolute -top-4 right-0 -z-0 h-screen w-auto">
-          <Image src={line} alt="line" />
-        </div>
-
         <div className="w-4/6 m-auto mt-32">
           <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center h-full">
             {/* logo for smaller screen */}

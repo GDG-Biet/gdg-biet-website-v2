@@ -15,10 +15,10 @@ type TeamProps = {
   
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Lead = ({year}:any)=>{
-    return<div className="w-1/2 m-auto my-5">
+    return<div className="lg:w-1/2 w-full m-auto my-5">
         {teamsdata.map((team)=>{
             if(year==team.year)
-           return<Team key={team.idx} name={team.name} position={team.position} twitter={team.Twitter} linkdin={team.linkdin} image={team.image}></Team>
+           return<TeamLead key={team.idx} name={team.name} position={team.position} twitter={team.Twitter} linkdin={team.linkdin} image={team.image}></TeamLead>
         })}
         
     </div>
@@ -26,13 +26,13 @@ const Lead = ({year}:any)=>{
 export default Lead;
 
 
-const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
+const TeamLead: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
     return<div className="w-full justify-between flex flex-row items-center p-4 bg-slate-400 bg-opacity-15 rounded-full">
-        <div className="w-2/3 rounded-full drop-shadow-lg"><Image className="w-full object-contain rounded-full" src={image} alt="" width={500} height={750}></Image></div>
-       <div className=" w-1/2">
+        <div className="lg:w-2/3 md:w-1/3 rounded-full drop-shadow-lg"><Image className="w-full object-contain rounded-full" src={image} alt="" width={500} height={750}></Image></div>
+       <div className=" md:w-1/2 w-full">
        <div className="text-center">
-            <h2 className="text-3xl font-bold text-slate-500 drop-shadow-2xl shadow-red-500">{name}</h2>
-            <p className="text-xl">{position}</p>
+            <h2 className="lg:text-3xl text-xl font-bold text-slate-500 drop-shadow-2xl shadow-red-500">{name}</h2>
+            <p className="lg:text-xl">{position}</p>
             </div>
             <div className=" w-1/4 m-auto grid grid-flow-col col-span-2 mt-2 place-content-center gap-4">
                 {/* Twitter */}
