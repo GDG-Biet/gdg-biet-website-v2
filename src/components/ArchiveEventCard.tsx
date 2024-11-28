@@ -20,7 +20,7 @@ type TechStackProps ={
 
 const ArchiveEventCard: React.FC<EventCardProps> = ({title, description,image,idx,tech,link,docs}) =>{
     return<div key={idx}>
-    <div className=" w-full bg-white border-2  dark:border-0 dark:bg-slate-800 dark:bg-opacity-50 rounded-lg flex flex-col">
+    <div className=" w-full bg-white border-2  dark:border-0 dark:bg-slate-800 dark:bg-opacity-50 rounded-lg flex flex-col p-2">
         <div className="w-full">
         <Link href={link}><Image className="w-full rounded-xl shadow-lg hover:shadow-blue-400 duration-300" width={500} height={500} src={image} alt="Event Image" /></Link> 
         </div>

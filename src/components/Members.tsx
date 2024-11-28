@@ -13,11 +13,9 @@ type TeamProps = {
     
   };
   
-
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Members = ({year}:any)=>{
-    return<div className="w-5/6 m-auto grid grid-cols-3 gap-10">
+    return<div className="lg:w-5/6 m-auto grid md:grid-cols-3 lg:gap-10">
         {teamsdata.map((team)=>{
             if(year==team.year)
            return<Team key={team.idx} name={team.name} position={team.position} twitter={team.Twitter} linkdin={team.linkdin} image={team.image}></Team>
@@ -27,15 +25,13 @@ const Members = ({year}:any)=>{
 }
 export default Members;
 
-
 const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
-    return<div className="w-full flex flex-col items-center gap-4 p-4 bg-slate-400 bg-opacity-15 rounded-2xl">
-        <div className="w-full rounded-full"><Image className="w-full object-contain rounded-xl" src={image} alt="" width={500} height={750}></Image></div>
+    return<div className="w-full flex md:flex-col items-center gap-6 p-4 bg-slate-400 bg-opacity-15 rounded-2xl">
+        <div className="lg:w-full w-1/2 drop-shadow-md"><Image className="w-full object-contain rounded-xl" src={image} alt="" width={500} height={750}></Image></div>
         <div className="text-center">
-            <h2 className="text-3xl font-bold text-slate-500">{name}</h2>
-            <p className="text-xl">{position}</p>
-            </div>
-            <div className="grid grid-flow-col col-span-2 mt-2 gap-2">
+            <h2 className="lg:text-3xl text-xl font-bold text-slate-500">{name}</h2>
+            <p className="lg:text-xl">{position}</p>
+            <div className="grid grid-flow-col place-content-center col-span-2 mt-2 gap-2 drop-shadow-lg">
                 {/* Twitter */}
                 <Link href={twitter}><div className="w-8 h-8 fill-stone-950 dark:fill-white flex justify-center items-center drop-shadow-lg">
                     <svg viewBox="0 0 50 50" width="50px" height="50px">
@@ -48,6 +44,7 @@ const Team: React.FC<TeamProps> = ({name,position,twitter,image,linkdin})=>{
                     <path d="M15.917 17.5H.083V1.666h15.834zM5.77 6.427a.96.96 0 0 0-1.032-.96.962.962 0 1 0-.025 1.92h.013a.963.963 0 0 0 1.044-.96zm-.123 1.719H3.803v5.552h1.845zm6.658 2.368c0-1.705-.91-2.5-2.125-2.5a1.832 1.832 0 0 0-1.663.917v-.786H6.67c.025.52 0 5.554 0 5.554h1.848v-3.102a1.264 1.264 0 0 1 .06-.45 1.011 1.011 0 0 1 .946-.676c.67 0 .936.51.936 1.256V13.7h1.846zm-3.8-1.564.013-.019v.019z"/>
                     </svg>
                 </div></Link>
+            </div>
             </div>
     </div>
 }
