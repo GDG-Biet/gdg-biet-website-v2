@@ -1,7 +1,7 @@
 import Image from "next/image";
 import line from "@/assets/line1.svg";
 import line2 from "@/assets/line2.svg";
-// import Storycard from "@/components/Storycard";
+import Storycard from "@/components/Storycard";
 import FAQs from "@/components/Faq";
 import Square from "@/assets/BlueSquare.svg";
 import Circle from "@/assets/GreenCircle.svg";
@@ -152,14 +152,14 @@ export default function Home() {
       </div>
       {/* Story*/}
 
-      {/* <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
+      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           Stories
         </h3>
         <div className=" bg-blue-400 bg-opacity-60 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
         </div>
-      </div> */}
+      </div>
 
       {/* FAQs*/}
       <div className="flex justify-center -z-10 flex-col sm:mt-36 mt-24">
