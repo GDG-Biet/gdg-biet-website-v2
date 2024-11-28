@@ -44,7 +44,7 @@ const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
 return (
   <div className='flex flex-col items-center justify-center w-full px-2 text-lg lg:text-base'>
     <button onClick={handler} className={`bg-white dark:bg-gray-900 bg-opacity-40 m-2 border-2 border-gray:900 rounded-lg px-5 shadow cursor-pointer w-full h-full ${turn![idx]}`}>
-      <div className='py-3'>
+      <div className='lg:py-3'>
          <div className='flex items-center justify-between h-14 text-left'>
             <span className='ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-sky-600'>{question}</span>
             <div>
@@ -53,7 +53,7 @@ return (
             </div>
          </div>
          <div ref={contentRef} className='mx-4 overflow-hidden text-left transition-all duration-500 h-full'>
-            <p className='py-1 font-normal leading-normal text-justify whitespace-pre-line text-xs lg:text-lg'>{answer}</p>
+            <p className='py-1 font-normal leading-normal text-justify whitespace-pre-line text-sm lg:text-lg'>{answer}</p>
          </div>
       </div>
     </button>

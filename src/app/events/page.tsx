@@ -13,23 +13,23 @@ export default function Events() {
   return (
     <>
       {/* Hero Section */}
-      <div className="lg:h-[90vh] pt-20">
+      <div className="lg:h-[90vh] lg:pt-20">
         <div className="absolute w-full h-full top-0 bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 backdrop-blur-sm -z-10"></div>
         <div>
           <Image
             src={Square}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:left-0 -left-16 md:top-[40vh] top-[20vh] -z-0"
           />
         </div>
         <div>
           <Image
             src={Circle}
             alt="Element-Square"
-            className="lg:h-1/2 h-1/6 absolute lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
+            className="lg:h-1/2 h-1/6 absolute lg:block hidden lg:right-0 -right-16 md:top-[50vh] top-[30vh] -z-0"
           />
         </div>
-        <div className="absolute -top-4 right-0 -z-0 h-screen w-auto">
+        <div className="absolute lg:block hidden -top-4 right-0 -z-0 h-screen w-auto">
           <Image src={line} alt="line" />
         </div>
 
@@ -56,7 +56,7 @@ export default function Events() {
       <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500">
         <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Upcoming Events</h1>
       </div>
-      <div className="h-auto  dark:bg-opacity-0 w-5/6 md:m-auto m-auto p-3 rounded-2xl ">
+      <div className="h-auto  dark:bg-opacity-0 lg:w-5/6 md:m-auto m-auto p-3 rounded-2xl ">
       {eventdata.map((event) => (
         <div key={event.idx} className='w-full'>
           <Eventcard
@@ -73,14 +73,14 @@ export default function Events() {
 
       </div>
 
-      <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500 mt-20">
-        <h1 className="h-auto mt-10 lg:mt-0 lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Archive Events</h1>
+      <div className="w-11/12 m-auto border-b-4  mb-4 border-gray-500 mt-20 ">
+        <h1 className="h-auto lg:text-left font-extrabold lg:text-6xl text-3xl text-center mx-10 rounded-2xl dark:text-red-400 text-slate-500">Archive Events</h1>
       </div>
-      <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-5/6 m-auto p-3 rounded-2xl gap-14">
-      {archiveEvent.map((event) => (
-        <div key={event.idx} className='w-full '>
+      <div className="grid lg:grid-cols-2  dark:bg-opacity-0 w-full lg:w-5/6 m-auto p-3 rounded-2xl gap-14 bg-blue-50">
+      {archiveEvent.map((event,i) => (
+        <div key={i} className='w-5/6 lg:w-full lg:m-0  m-auto'>
           <ArchiveEventCard
-            idx={event.idx}
+            idx={event.idx+i}
             title={event.title}
             description={event.description}
             image={event.image}

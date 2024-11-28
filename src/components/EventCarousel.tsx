@@ -10,9 +10,9 @@ import {
   import Card from "@/components/ui/Card";
   
 export default function EventCarousel(){
-    return<div className="w-4/5 h-auto backdrop-blur-md dark:bg-opacity-20 bg-opacity-10 mt-16 m-auto rounded-3xl relative">
+    return<div className="w-5/6 h-auto backdrop-blur-md dark:bg-opacity-20 bg-opacity-10 lg:mt-16 m-auto rounded-3xl relative">
     <div className="justify-center flex">
-      <Carousel className="my-10 mx-10 md:w-auto w-4/5" 
+      <Carousel className="m-10 md:w-auto w-11/12" 
       plugins={[
         Autoplay({
           delay: 2000,
