@@ -1,7 +1,7 @@
 import Image from "next/image";
 import line from "@/assets/line1.svg";
 import line2 from "@/assets/line2.svg";
-// import Storycard from "@/components/Storycard";
+import Storycard from "@/components/Storycard";
 import FAQs from "@/components/Faq";
 import Square from "@/assets/BlueSquare.svg";
 import Circle from "@/assets/GreenCircle.svg";
@@ -68,9 +68,9 @@ export default function Home() {
         </div>
       </div>
       {/* Event Section */}
-      <div className="flex justify-center relative flex-col">
-        <div className="flex lg:gap-4 items-center justify-center">
-          <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-gray-600 dark:text-gray-500">
+      <div className="flex justify-center relative -z-10 flex-col h-auto lg:h-[80vh]">
+        <div className="flex gap-4 flex-row items-center justify-center">
+          <h3 className="text-5xl font-semibold text-center justify-center text-black dark:text-gray-500">
             Events
           </h3>
           <div className="lg:h-40 w-40 lg:block hidden bg-yellow-500 rounded-full absolute lg:left-[410px] -z-10 border-black border-2"></div>
@@ -82,14 +82,12 @@ export default function Home() {
           <Image
             src={SquareGray}
             alt="Triangle"
-            className="absolute lg:block hidden left-5 -bottom-0 -z-10" 
+            className="absolute left-5 -bottom-0 -z-10"
           />
         </div>
         <EventCarousel></EventCarousel>
+      </div>
 
-          
-        </div>
-        
       {/* About Section */}
       <div className="grid sm:grid-cols-2 gap-5 w-11/12 m-auto">
         <div className="w-full h-auto flex justify-center items-center">
@@ -137,7 +135,7 @@ export default function Home() {
           <Image
             src={hexagon}
             alt="arc"
-            className=" sm:left-10 hidden lg:block  absolute h-24 lg:h-48 duration-1000 ease-in-out"  
+            className=" sm:left-10 absolute h-24 lg:h-48 duration-1000 ease-in-out"
             //  Animation  need to trigger on scroll
           />
         </div>
@@ -154,14 +152,14 @@ export default function Home() {
       </div>
       {/* Story*/}
 
-      {/* <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
+      <div className="flex justify-center -z-10 flex-col h-[60vh] lg:h-[70vh] m-10 p-4">
         <h3 className="tracking-widest text-5xl font-semibold text-center relative z-10 text-black dark:text-gray-500">
           Stories
         </h3>
         <div className=" bg-blue-400 bg-opacity-60 backdrop-blur-xl p-10 lg:p-20 rounded-3xl mt-5 flex justify-center items-center">
           <Storycard></Storycard>
         </div>
-      </div> */}
+      </div>
 
       {/* FAQs*/}
       <div className="flex justify-center -z-10 flex-col sm:mt-36 mt-24">
