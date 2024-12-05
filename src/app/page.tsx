@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="w-min-[1280px] mx-auto">
       {/* Hero Section */}
-      <div className="lg:h-[80vh] mb-20 pt-20 relative">
+      <div className="lg:h-[80vh] mb-[200px] pt-20 relative">
         <div>
           <Image
             src={Square}
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="absolute -top-4 lg:right-0 -right-10 -z-10 h-screen w-auto lg:block hidden">
           <Image src={line} alt="line" />
         </div>
-        <div className="absolute top-[700px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden">
+        <div className="absolute top-[800px] left-[450px] -z-10 h-[200vh] w-full lg:block hidden">
           <Image src={line2} alt="line" />
         </div>
         {/* logo for smaller screen */}
