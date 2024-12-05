@@ -1,7 +1,6 @@
 "use client"
 import { useLottie } from "lottie-react";
-import animation from "./Wumpus.json"
-// import Lottie from "lottie-react";
+import animation from "@/assets/Wumpus.json"
 
 export default function MyComponent() {
 

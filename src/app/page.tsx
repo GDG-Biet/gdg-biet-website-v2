@@ -13,7 +13,7 @@ import arc from "@/assets/arc.svg";
 import hexagon from "@/assets/hexagon.svg";
 import EventCarousel from "@/components/EventCarousel";
 import Sponsers2 from "@/components/Sponsers";
-import Headerlogo from "@/components/animation/HeaderLogo";
+import Headerlogo from "@/components/HeaderLogo";
 export default function Home() {
   return (
     <div className="w-min-[1280px] mx-auto">
