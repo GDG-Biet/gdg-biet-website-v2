@@ -15,7 +15,7 @@ type TeamProps = {
   
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Members = ({year}:any)=>{
-    return<div className="lg:w-5/6 m-auto grid md:grid-cols-3 lg:gap-10">
+    return<div className="lg:w-5/6 m-auto grid md:grid-cols-3 lg:gap-10 ">
         {teamsdata.map((team)=>{
             if(year==team.year)
            return<Team key={team.idx} name={team.name} position={team.position} twitter={team.Twitter} linkdin={team.linkdin} image={team.image}></Team>
