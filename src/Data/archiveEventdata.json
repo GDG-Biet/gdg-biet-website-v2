@@ -1,6 +1,6 @@
 [
     {
-        "idx": 1,
+        "idx": 11,
         "image":"/BuildWithAI.png",
         "title":"Archive",
         "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?",
@@ -9,7 +9,7 @@
         "Docs" : "https://www.youtube.com/"
     },
     {
-        "idx": 2,
+        "idx": 12,
         "image":"/BuildWithAI.png",
         "title":"Build with GDG",
         "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?",
@@ -18,7 +18,7 @@
         "Docs" : "https://www.youtube.com/"
     },
     {
-        "idx": 1,
+        "idx": 21,
         "image":"/BuildWithAI.png",
         "title":"Archive",
         "description":"Hi Amar, I am a bot that can help you with your queries. How can I help you today?",

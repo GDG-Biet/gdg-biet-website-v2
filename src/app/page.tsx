@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import line from "@/assets/line1.svg";
 import line2 from "@/assets/line2.svg";
@@ -60,9 +61,9 @@ export default function Home() {
         </div>
         <div className="flex justify-center lg:flex-row flex-col gap-7 mt-10 w-2/3 m-auto">
           <button className="lg:p-2 p-4 font-semibold lg:px-8 text-lg border-2 border-black dark:border-gray-500 bg-[#4285F4] rounded-lg text-white ">
-            Join Chapter
+            <a href="https://gdg.community.dev/gdg-on-campus-bansal-institute-of-engineering-technology-lucknow-india/">Join Chapter</a>
           </button>
-          <button className="lg:p-2 p-4 font-semibold lg:px-8 text-lg border-2 border-black dark:border-gray-500 text-[#4285F4] rounded-lg">
+          <button className="lg:p-2 p-4 font-semibold lg:px-8 text-lg border-2 border-black dark:border-gray-500 text-[#4285F4] rounded-lg" onClick={()=>{alert("There is no open Position right now.")}}>
             Open Position
           </button>
         </div>
