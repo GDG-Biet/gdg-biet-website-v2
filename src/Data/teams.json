@@ -1,6 +1,6 @@
 [
     {
-        "idx": 1,
+        "idx": 6001,
         "image":"/Team/rakon.jpg",
         "name":"Anshu Kumar",
         "position":"Co-lead",
@@ -10,7 +10,7 @@
         
     },
     {
-        "idx": 2,
+        "idx": 6002,
         "image":"/Team/Rashi.jpg",
         "name":"Rashi Chandra",
         "position":"Human Resource",
@@ -20,7 +20,7 @@
         
     },
     {
-        "idx": 3,
+        "idx": 6003,
         "image":"/Team/Vishal.jpeg",
         "name":"Vishal Gupta",
         "position":"Tech-lead",
@@ -30,7 +30,7 @@
         
     },
     {
-        "idx": 4,
+        "idx": 6004,
         "image":"/Team/ShivakantBhaia.jpg",
         "name":"Shivakant Shukla",
         "position":"Tech Co-lead",
@@ -41,7 +41,7 @@
     },
     
     {
-        "idx": 5,
+        "idx": 6005,
         "image":"/Team/rahnuma.jpg",
         "name":"Rehnuma Rahman",
         "position":"Content Writing-Lead",
@@ -52,7 +52,7 @@
         
     },
     {
-        "idx": 6,
+        "idx": 6006,
         "image":"/Team/Ankita.jpeg",
         "name":"Ankita Srivastava",
         "position":"Social Media-Lead",
@@ -62,7 +62,7 @@
         
     },
     {
-        "idx": 7,
+        "idx": 6007,
         "image":"/Team/Prince.png",
         "name":"Prince Upadhayay",
         "position":"Marketing-Lead",
@@ -72,7 +72,7 @@
         
     },
     {
-        "idx": 8,
+        "idx": 6008,
         "image":"/Team/apoorv.jpg",
         "name":"Apoorv Kumar",
         "position":"Event Management-Lead",
@@ -82,7 +82,7 @@
         
     },
     {
-        "idx": 9,
+        "idx": 6009,
         "image":"/Team/Anuj.jpeg",
         "name":"Anuj Gupta",
         "position":"Event Management Co-Lead",
@@ -92,7 +92,7 @@
         
     },
     {
-        "idx": 10,
+        "idx": 6010,
         "image":"/Team/Humaira.jpg",
         "name":"Humaira Hashmi",
         "position":"Co-Organizer",
@@ -102,7 +102,7 @@
         
     },
     {
-        "idx": 11,
+        "idx": 6011,
         "image":"/Team/Nandini.jpeg",
         "name":"Nandini Singh",
         "position":"HR Associate",
@@ -112,7 +112,7 @@
         
     },
     {
-       "idx": 12,
+       "idx": 6012,
         "image":"/Team/Kaif.jpg",
         "name":"Mohd. Kaif",
         "position":"Web Developer Organizer",
@@ -122,7 +122,7 @@
         
     },
     {
-        "idx": 13,
+        "idx": 6013,
          "image":"/Team/Katayani.jpg",
          "name":"Katyayani Mishra",
          "position":"Web developer Co-Organizer",
@@ -132,7 +132,7 @@
          
      },
      {  
-        "idx": 14,
+        "idx": 6014,
         "image":"/Team/Aryan.jpg",
         "name":"Aryan Gupta",
         "position":"AI/Ml Organizer",
@@ -142,7 +142,7 @@
         
     },
     {
-        "idx": 15,
+        "idx": 6015,
         "image":"/Team/abhishek varma.jpeg",
         "name":"Abhishek Verma",
         "position":"AI/ML Co-Organizer",
@@ -152,7 +152,7 @@
         
     },
     {
-        "idx": 16,
+        "idx": 6016,
         "image":"/Team/nagesh.jpg",
         "name":"Nagesh Tripathi",
         "position":"Data Forge Organizer",
@@ -162,7 +162,7 @@
         
     },
     {
-        "idx": 17,
+        "idx": 6017,
         "image":"/Team/vikas.jpg",
         "name":"Vikas Deep Sharma",
         "position":"Social Media Organizer",
@@ -172,7 +172,7 @@
         
     },
     {
-        "idx": 19,
+        "idx": 6019,
         "image":"/Team/kavya.jpg",
         "name":"Kavyshree Jaiswal",
         "position":"Event Management Organizer",
@@ -182,7 +182,7 @@
         
     },
     {
-        "idx": 20,
+        "idx": 6020,
         "image":"/Team/utkarsh.jpg",
         "name":"Utkarsh Upadhayay",
         "position":"Event Management Co-Organizer",
