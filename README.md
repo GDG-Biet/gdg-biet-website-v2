@@ -4,19 +4,13 @@ The official website for the Google Developer Group is on campus at BIET, Luckno
 
 This is a [Next.js](https://nextjs.org) project bootstrapped using [Tailwind](https://tailwindcss.com/) and [TypeScript](https://www.typescriptlang.org/).
 
-### Steps to Update the README.md
-
-1. **Project Overview**:
-   - Update the project title to "GDG-Biet-Website".
-   - Description: "The official website for the Google Developer Group on campus at BIET, Lucknow."
-
-2. **Technologies Used**:
+**Technologies Used**:
    - Add information about the tech stack:
      - **Frontend**: Next.js, Tailwind CSS, TypeScript
      - **Backend**: Not explicitly mentioned (assumed to be serverless or integrated with Next.js)
      - **Tools**: ESLint for linting, Turbopack for development
 
-3. **Getting Started**:
+**Getting Started**:
    - Include steps to run the development server using different package managers (npm, yarn, pnpm, bun):
      ```bash
      npm install
@@ -35,11 +29,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped using [Tailwind](ht
      bun dev
      ```
 
-4. **Configuration Details**:
+**Configuration Details**:
    - Add information about the Next.js configuration (`next.config.ts`):
      - Remote image patterns allowed from `res.cloudinary.com`.
 
-5. **Component Structure**:
+**Component Structure**:
    - Mention the component aliases defined in `components.json`:
      - `components`: "@/components"
      - `utils`: "@/lib/utils"
@@ -47,7 +41,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped using [Tailwind](ht
      - `examples`: "@/components/examples"
      - `blocks`: "@/components/blocks"
 
-6. **Dependencies**:
+**Dependencies**:
    - List the main dependencies and devDependencies from `package.json`.
 
 ## Configuration Details
